@@ -12,7 +12,12 @@ public class PercolationStats {
     int o = 0;
     int [] C;
     double m, s, cL, cH;
-    public PercolationStats(int n, int trials){
+    public PercolationStats(int n, int trials) throws IllegalArgumentException{
+        if (n <= 0 || trials <= 0){
+            throw new IllegalArgumentException
+                    ("n or T are less than zero, they should not be");
+        }
+
             Percolation p = new Percolation(n);
             C = new int[trials];
             for (int z = 0; z< trials; z++){

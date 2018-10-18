@@ -5,16 +5,18 @@
  **************************************************************************** */
 
 import edu.princeton.cs.algs4.StdStats;
+import java.lang.IllegalArgumentException;
 
 import java.util.Arrays;
 public class Percolation {
     int[][] matrix;
     int[][] IdMatrix;
 
-    public Percolation(int n) {
-        // if (n < 1) {throws IllegalArgumentException;}
-
-        // else
+    public Percolation(int n) throws IllegalArgumentException {
+        if (n <= 0 ){
+            throw new IllegalArgumentException
+                    ("n should not be less than or equal to zero");
+        }
             matrix = new int[n][n];
         for (int i = 0; i < n; i++) {
             Arrays.fill(matrix[i], 1);
@@ -23,7 +25,14 @@ public class Percolation {
 
     }
 
-    public  void open(int row, int col) {
+    public  void open(int row, int col) throws IllegalArgumentException {
+        if (row <= 0 || row > matrix.length
+                || col <= 0 || col > matrix.length ){
+            throw new IllegalArgumentException
+                    ("your row and coloiumn input are less "
+                             + "than zero or more than n");
+        }
+
         if (matrix[row - 1][col - 1] == 0) {
         }
         else {
@@ -31,7 +40,13 @@ public class Percolation {
         }
     }
 
-    public boolean isOpen(int row, int col) {
+    public boolean isOpen(int row, int col) throws IllegalArgumentException {
+        if (row <= 0 || row > matrix.length
+                || col <= 0 || col > matrix.length ){
+            throw new IllegalArgumentException
+                    ("your row and coloiumn input are less "
+                             + "than zero or more than n");
+        }
 
         if (matrix[row - 1][col - 1] == 0) {
             return true;
@@ -41,6 +56,13 @@ public class Percolation {
     }
 
     public boolean isFull(int row, int col) {
+        if (row <= 0 || row > matrix.length
+                || col <= 0 || col > matrix.length ){
+            throw new IllegalArgumentException
+                    ("your row and coloiumn input are less "
+                             + "than zero or more than n");
+        }
+
         IdMatrix = new int[matrix.length][matrix.length];
         int[] IdArray = new int[5];
         boolean b = false;
