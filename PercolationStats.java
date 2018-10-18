@@ -4,16 +4,26 @@
  *  Description:
  **************************************************************************** */
 
+import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdRandom;
 
+import java.util.Arrays;
+
 public class PercolationStats {
-        public PercolationStats(int n, int trials){
+
+    int o = 0;
+    public PercolationStats(int n, int trials){
             new Percolation(n);
+
             for (int z = 0; z< trials; z++){
                 Percolation.open(StdRandom.uniform(n+1),
                      StdRandom.uniform(n+1));
-
+                    o = o + Percolation.numberOfOpenSites();
             }
+
+        }
+        public double mean(){
+         double m = o/trials;
 
         }
 
