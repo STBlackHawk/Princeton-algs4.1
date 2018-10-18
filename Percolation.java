@@ -1,23 +1,20 @@
 /* *****************************************************************************
  *  Name:Shahin Taghikhani
  *  Date: 10/17/2018
- *  Description: Percolation for algortihm class in Princton on Coursera
+ *  Description: Percolation for Princton Algorithm I class on Coursera
  **************************************************************************** */
 
-import java.util.Arrays;
-import java.lang.*;
-import java.util.Collections;
-import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
-import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
+import java.util.Arrays;
 public class Percolation {
-    static int[][] matrix;
+    int[][] matrix;
     int[][] IdMatrix;
 
     public Percolation(int n) {
-        if (n < 1) throw java.lang.IllegalArgumentException("n should be >= 1");
-        else
+        // if (n < 1) {throws IllegalArgumentException;}
+
+        // else
             matrix = new int[n][n];
         for (int i = 0; i < n; i++) {
             Arrays.fill(matrix[i], 1);
@@ -26,7 +23,7 @@ public class Percolation {
 
     }
 
-    public static void open(int row, int col) {
+    public  void open(int row, int col) {
         if (matrix[row - 1][col - 1] == 0) {
         }
         else {
@@ -101,7 +98,7 @@ public class Percolation {
                         min = IdArray[k];
                     }
                 }
-                IdMatrix[i][j] = min;
+                IdMatrix[i][j] = StdStats.min(IdArray);
             }
 
         }
@@ -118,7 +115,7 @@ public class Percolation {
         return b;
     }
 
-    public static int numberOfOpenSites() {
+    public int numberOfOpenSites() {
         int m = 0;
         for (int j = 0; j < matrix.length; j++) {
             for (int k = 0; k < matrix.length; k++) {
@@ -139,13 +136,9 @@ public class Percolation {
         return b;
     }
 
-    public static void main(String[] args) {
-
-
-    }
 }
 
 
 
 
-}
+
