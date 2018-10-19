@@ -7,48 +7,50 @@
 import edu.princeton.cs.algs4.StdStats;
 import java.lang.IllegalArgumentException;
 
-import java.util.Arrays;
-public class Percolation {
-    int[][] matrix;
-    int[][] IdMatrix;
 
-    public Percolation(int n) throws IllegalArgumentException {
+public class Percolation {
+     private int[][] matrix;
+     private int[][] IdMatrix;
+
+    public Percolation(int n){
+
         if (n <= 0 ){
             throw new IllegalArgumentException
                     ("n should not be less than or equal to zero");
         }
             matrix = new int[n][n];
         for (int i = 0; i < n; i++) {
-            Arrays.fill(matrix[i], 1);
+            for (int j = 0; j < n; j++)
+                matrix[i][j] = 1;
         }
 
 
     }
 
-    public  void open(int row, int col) throws IllegalArgumentException {
-        if (row <= 0 || row > matrix.length
-                || col <= 0 || col > matrix.length ){
+    public  void open(int row, int col) {
+        if (row < 0 || row > matrix.length
+                || col < 0 || col > matrix.length ){
             throw new IllegalArgumentException
                     ("your row and coloiumn input are less "
                              + "than zero or more than n");
         }
 
-        if (matrix[row - 1][col - 1] == 0) {
+        if (matrix[row][col] == 0) {
         }
         else {
-            matrix[row - 1][col - 1] = 0;
+            matrix[row][col] = 0;
         }
     }
 
-    public boolean isOpen(int row, int col) throws IllegalArgumentException {
-        if (row <= 0 || row > matrix.length
-                || col <= 0 || col > matrix.length ){
+    public boolean isOpen(int row, int col) {
+        if (row < 0 || row > matrix.length
+                || col < 0 || col > matrix.length ){
             throw new IllegalArgumentException
                     ("your row and coloiumn input are less "
                              + "than zero or more than n");
         }
 
-        if (matrix[row - 1][col - 1] == 0) {
+        if (matrix[row][col] == 0) {
             return true;
         }
 
@@ -56,8 +58,8 @@ public class Percolation {
     }
 
     public boolean isFull(int row, int col) {
-        if (row <= 0 || row > matrix.length
-                || col <= 0 || col > matrix.length ){
+        if (row < 0 || row > matrix.length
+                || col < 0 || col > matrix.length ){
             throw new IllegalArgumentException
                     ("your row and coloiumn input are less "
                              + "than zero or more than n");
@@ -74,52 +76,41 @@ public class Percolation {
                     IdMatrix[i][j] = i * matrix.length + j;
                     IdArray[0] = IdMatrix[i][j];
                 }
-                if (matrix[i - 1][j] == 0) {
+
+                if (i != 0 && matrix[i - 1][j] == 0) {
                     IdArray[1] = IdMatrix[i - 1][j];
                 }
-                if (matrix[i][j - 1] == 0) {
-                    IdArray[2] = IdMatrix[i][j + 1];
+                if (j != 0 && matrix[i][j - 1] == 0) {
+                    IdArray[2] = IdMatrix[i][j - 1];
                 }
-                if (matrix[i][j + 1] == 0) {
+                if (j != matrix.length -1 && matrix[i][j + 1] == 0) {
                     IdArray[3] = IdMatrix[i][j + 1];
                 }
-                if (matrix[i + 1][j] == 0) {
+                if (i != matrix.length -1 && matrix[i + 1][j] == 0) {
                     IdArray[4] = IdMatrix[i + 1][j];
                 }
 
-                int min = IdArray[0];
-                for (int k = 0; k < 5; k++) {
-                    if (IdArray[k] < min) {
-                        min = IdArray[k];
-                    }
-                }
-                IdMatrix[i][j] = min;
+                IdMatrix[i][j] = StdStats.min(IdArray);
             }
-            for (int j = matrix.length; j > 0; j--) {
+            for (int j = matrix.length -1 ; j > 0; j--) {
 
                 if (matrix[i][j] == 0) {
                     IdArray[0] = IdMatrix[i][j];
                 }
-                if (matrix[i - 1][j] == 0) {
+                if (i != 0 && matrix[i - 1][j] == 0) {
                     IdArray[1] = IdMatrix[i - 1][j];
                 }
-                if (matrix[i][j - 1] == 0) {
-                    IdArray[2] = IdMatrix[i][j + 1];
+                if (j != 0 && matrix[i][j - 1] == 0) {
+                    IdArray[2] = IdMatrix[i][j - 1];
                 }
-                if (matrix[i][j + 1] == 0) {
+                if (j != matrix.length -1 && matrix[i][j + 1] == 0) {
                     IdArray[3] = IdMatrix[i][j + 1];
                 }
 
-                if (matrix[i + 1][j] == 0) {
+                if (i != matrix.length -1 && matrix[i + 1][j] == 0) {
                     IdArray[4] = IdMatrix[i + 1][j];
                 }
 
-                int min = IdArray[0];
-                for (int k = 0; k < 4; k++) {
-                    if (IdArray[k] < min) {
-                        min = IdArray[k];
-                    }
-                }
                 IdMatrix[i][j] = StdStats.min(IdArray);
             }
 

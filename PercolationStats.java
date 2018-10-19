@@ -8,15 +8,19 @@ import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 
 public class PercolationStats {
-    int [] C;
-    double m, s, cL, cH;
+     private int [] C;
+     private double m, s, cL, cH;
     public PercolationStats(int n, int trials){
+        if (n <= 0 || trials <= 0 ){
+            throw new IllegalArgumentException
+                    ("n should not be less than or equal to zero");
+        }
             Percolation p = new Percolation(n);
             C = new int[trials];
             for (int z = 0; z< trials; z++){
                 while (!p.percolates()) {
-                    p.open(StdRandom.uniform(n + 1),
-                           StdRandom.uniform(n + 1));
+                    p.open(StdRandom.uniform(n),
+                           StdRandom.uniform(n));
                 }
                 C[z] = p.numberOfOpenSites();
             }
@@ -56,5 +60,4 @@ public class PercolationStats {
     }
 
 }
-//thesting the commit
 
