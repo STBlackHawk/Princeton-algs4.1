@@ -151,7 +151,7 @@ public class Percolation {
 
     public boolean percolates() {
         boolean b = false;
-        for (int m = 1; m < IdMatrix.length; m++) {
+        for (int m = 1; m < matrix.length; m++) {
             b = isFull(matrix.length - 1, m);
 
         }

@@ -8,16 +8,9 @@ import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 
 public class PercolationStats {
-    int T;
-    int o = 0;
     int [] C;
     double m, s, cL, cH;
-    public PercolationStats(int n, int trials) throws IllegalArgumentException{
-        if (n <= 0 || trials <= 0){
-            throw new IllegalArgumentException
-                    ("n or T are less than zero, they should not be");
-        }
-
+    public PercolationStats(int n, int trials){
             Percolation p = new Percolation(n);
             C = new int[trials];
             for (int z = 0; z< trials; z++){
@@ -63,4 +56,5 @@ public class PercolationStats {
     }
 
 }
+//thesting the commit
 
