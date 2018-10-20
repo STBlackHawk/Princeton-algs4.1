@@ -29,29 +29,29 @@ public class Percolation {
     }
 
     public  void open(int row, int col) {
-        if (row < 0 || row > matrix.length
-                || col < 0 || col > matrix.length ){
+        if (row <= 0 || row > matrix.length
+                || col <= 0 || col > matrix.length ){
             throw new IllegalArgumentException
                     ("your row and coloiumn input are less "
                              + "than zero or more than n");
         }
 
-        if (matrix[row][col] == 0) {
+        if (matrix[row -1 ][col -1] == 0) {
         }
         else {
-            matrix[row][col] = 0;
+            matrix[row - 1][col -1] = 0;
         }
     }
 
     public boolean isOpen(int row, int col) {
-        if (row < 0 || row > matrix.length
-                || col < 0 || col > matrix.length ){
+        if (row <= 0 || row > matrix.length
+                || col <= 0 || col > matrix.length ){
             throw new IllegalArgumentException
                     ("your row and coloiumn input are less "
                              + "than zero or more than n");
         }
 
-        if (matrix[row][col] == 0) {
+        if (matrix[row-1][col-1] == 0) {
             return true;
         }
 
@@ -59,16 +59,17 @@ public class Percolation {
     }
 
     public boolean isFull(int row, int col) {
-        if (row < 0 || row > matrix.length
-                || col < 0 || col > matrix.length) {
+        if (row <= 0 || row > matrix.length
+                || col <= 0 || col > matrix.length) {
             throw new IllegalArgumentException
                     ("your row and coloiumn input are less "
                             + "than zero or more than n");
         }
 
-        IdMatrix = new WeightedQuickUnionUF(matrix.length);
-        boolean b = false;
         int l = matrix.length;
+        IdMatrix = new WeightedQuickUnionUF(matrix.length^2);
+        boolean b = false;
+
 
         for (int i = 0; i < l; i++) {
             for (int j = 0; j < l; j++) {
@@ -98,7 +99,7 @@ public class Percolation {
 
         if (matrix[row - 1][col - 1] == 0) {
             for (int m = 0; m < l; m++) {
-                b = IdMatrix.connected(((row * l) + col), ((0 * l) + m));
+                b = IdMatrix.connected((((row -1) * l) + (col-1)), ((0 * l) + m));
             }
 
         } else b = false;
