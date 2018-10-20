@@ -6,11 +6,12 @@
 
 import edu.princeton.cs.algs4.StdStats;
 import java.lang.IllegalArgumentException;
+import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 
 public class Percolation {
      private int[][] matrix;
-     private int[][] IdMatrix;
+     private WeightedQuickUnionUF IdMatrix;
 
     public Percolation(int n){
 
@@ -59,72 +60,48 @@ public class Percolation {
 
     public boolean isFull(int row, int col) {
         if (row < 0 || row > matrix.length
-                || col < 0 || col > matrix.length ){
+                || col < 0 || col > matrix.length) {
             throw new IllegalArgumentException
                     ("your row and coloiumn input are less "
-                             + "than zero or more than n");
+                            + "than zero or more than n");
         }
 
-        IdMatrix = new int[matrix.length][matrix.length];
-        int[] IdArray = new int[5];
+        IdMatrix = new WeightedQuickUnionUF(matrix.length);
         boolean b = false;
+        int l = matrix.length;
 
-        for (int i = 1; i < IdMatrix.length; i++) {
-            for (int j = 0; j < IdMatrix.length; j++) {
-
+        for (int i = 0; i < l; i++) {
+            for (int j = 0; j < l; j++) {
                 if (matrix[i][j] == 0) {
-                    IdMatrix[i][j] = i * matrix.length + j;
-                    IdArray[0] = IdMatrix[i][j];
-                }
 
-                if (i != 0 && matrix[i - 1][j] == 0) {
-                    IdArray[1] = IdMatrix[i - 1][j];
-                }
-                if (j != 0 && matrix[i][j - 1] == 0) {
-                    IdArray[2] = IdMatrix[i][j - 1];
-                }
-                if (j != matrix.length -1 && matrix[i][j + 1] == 0) {
-                    IdArray[3] = IdMatrix[i][j + 1];
-                }
-                if (i != matrix.length -1 && matrix[i + 1][j] == 0) {
-                    IdArray[4] = IdMatrix[i + 1][j];
-                }
+                    if (i != 0 && matrix[i - 1][j] == 0) {
+                        IdMatrix.union((((i - 1) * l) + j), ((i * l) + j));
 
-                IdMatrix[i][j] = StdStats.min(IdArray);
-            }
-            for (int j = matrix.length -1 ; j > 0; j--) {
+                    }
+                    if (j != 0 && matrix[i][j - 1] == 0) {
+                        IdMatrix.union((((i) * l) + (j - 1)), ((i * l) + j));
 
-                if (matrix[i][j] == 0) {
-                    IdArray[0] = IdMatrix[i][j];
-                }
-                if (i != 0 && matrix[i - 1][j] == 0) {
-                    IdArray[1] = IdMatrix[i - 1][j];
-                }
-                if (j != 0 && matrix[i][j - 1] == 0) {
-                    IdArray[2] = IdMatrix[i][j - 1];
-                }
-                if (j != matrix.length -1 && matrix[i][j + 1] == 0) {
-                    IdArray[3] = IdMatrix[i][j + 1];
-                }
+                    }
+                    if (j != l - 1 && matrix[i][j + 1] == 0) {
+                        IdMatrix.union((((i) * l) + (j + 1)), ((i * l) + j));
 
-                if (i != matrix.length -1 && matrix[i + 1][j] == 0) {
-                    IdArray[4] = IdMatrix[i + 1][j];
-                }
+                    }
+                    if (i != l - 1 && matrix[i + 1][j] == 0) {
+                        IdMatrix.union((((i + 1) * l) + (j)), ((i * l) + j));
 
-                IdMatrix[i][j] = StdStats.min(IdArray);
+                    }
+
+                }
             }
 
         }
 
         if (matrix[row - 1][col - 1] == 0) {
-            for (int m = 0; m < matrix.length; m++)
-                if (IdMatrix[row][col] == IdMatrix[0][m])
-                    b = true;
-        }
-        else {
+            for (int m = 0; m < l; m++) {
+                b = IdMatrix.connected(((row * l) + col), ((0 * l) + m));
+            }
 
-            b = false;
-        }
+        } else b = false;
         return b;
     }
 
