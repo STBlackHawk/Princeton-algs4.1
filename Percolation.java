@@ -4,8 +4,6 @@
  *  Description: Percolation for Princton Algorithm I class on Coursera
  **************************************************************************** */
 
-import edu.princeton.cs.algs4.StdStats;
-import java.lang.IllegalArgumentException;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 
@@ -67,7 +65,7 @@ public class Percolation {
         }
 
         int l = matrix.length;
-        IdMatrix = new WeightedQuickUnionUF(matrix.length^2);
+        IdMatrix = new WeightedQuickUnionUF((l*l));
         boolean b = false;
 
 
