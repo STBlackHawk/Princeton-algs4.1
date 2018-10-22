@@ -3,42 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Final Push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InteractivePercolationVisualizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PercolationStats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PercolationVisualizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/checkstyle-coursera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/checkstyle-coursera.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/checkstyle-suppressions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/checkstyle-suppressions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/spotbugs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/spotbugs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/Algorithms, Part I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/Algorithms, Part I.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/CREDITS" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/CREDITS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/Percolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/Percolation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/greeting57.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/greeting57.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/heart25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/heart25.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input1-no.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input1-no.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input10-no.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input10-no.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input2-no.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input2-no.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input20.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input50.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8-dups.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8-dups.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8-no.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8-no.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/java60.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/java60.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/jerry47.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/jerry47.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/sedgewick60.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/sedgewick60.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/snake101.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/snake101.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/snake13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/snake13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/wayne98.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/wayne98.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/lift/" />
@@ -482,7 +446,7 @@
       <workItem from="1539876598698" duration="263000" />
       <workItem from="1539876886094" duration="18303000" />
       <workItem from="1539966277600" duration="5164000" />
-      <workItem from="1540219190625" duration="2845000" />
+      <workItem from="1540219190625" duration="3154000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1539737468667</created>
@@ -551,7 +515,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41967000" />
+    <option name="totallyTimeSpent" value="42276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,6 +528,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-58" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11247335" />
       <window_info id="Structure" order="1" show_stripe_button="false" side_tool="true" weight="0.25" />
@@ -574,15 +539,15 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49573562" visible="true" weight="0.3991684" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49520257" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49573562" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.32904148" />
       <window_info anchor="bottom" id="CheckStyle" order="7" sideWeight="0.49840087" weight="0.32848233" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4914712" weight="0.3097713" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5042644" side_tool="true" visible="true" weight="0.3991684" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49093816" weight="0.3097713" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50479746" side_tool="true" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32825485" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="12" sideWeight="0.49840087" weight="0.32848233" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -615,16 +580,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Final Push" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Percolation.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="matrix[i - 1]" language="JAVA" />
