@@ -34,7 +34,7 @@ public class Percolation {
                              + "than zero or more than n");
         }
 
-        if (matrix[row -1 ][col -1] == 0) {
+        if (matrix[row -1][col -1] == 0) {
         }
         else {
             matrix[row - 1][col -1] = 0;
@@ -52,8 +52,9 @@ public class Percolation {
         if (matrix[row-1][col-1] == 0) {
             return true;
         }
-
-        return false;
+        else {
+            return false;
+        }
     }
 
     public boolean isFull(int row, int col) {
@@ -97,10 +98,10 @@ public class Percolation {
 
         if (matrix[row - 1][col - 1] == 0) {
             for (int m = 0; m < l; m++) {
-                b = IdMatrix.connected((((row -1) * l) + (col-1)), ((0 * l) + m));
+                b = IdMatrix.connected((((row -1) * l) + (col-1)), (m));
             }
 
-        } else b = false;
+        }
         return b;
     }
 

@@ -19,8 +19,8 @@ public class PercolationStats {
             C = new int[trials];
             for (int z = 0; z< trials; z++){
                 while (!p.percolates()) {
-                    p.open(StdRandom.uniform(n)+1,
-                           StdRandom.uniform(n)+1);
+                    p.open(StdRandom.uniform(1,n+1),
+                           StdRandom.uniform(1,n+1));
                 }
                 C[z] = p.numberOfOpenSites();
             }
