@@ -100,7 +100,7 @@ public class Percolation {
             for (int m = 0; m < l; m++) {
                 if (matrix[0][m] == 0 ) {
                     b = IdMatrix.connected((((row - 1) * l) + (col - 1)), (m));
-                    if (b)  break;
+                    if (b) break;
                 }
             }
 
@@ -124,6 +124,7 @@ public class Percolation {
         boolean b = false;
         for (int m = 1; m < matrix.length; m++) {
             b = isFull(matrix.length - 1, m);
+            if (b) break;
 
         }
         return b;
