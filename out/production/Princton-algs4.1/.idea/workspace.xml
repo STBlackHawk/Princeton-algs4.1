@@ -2,84 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="667eeea9-acf5-438b-a71e-b9a82010649f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/file.template.settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Princton_algs4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/_lift.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/_lift.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Princton-algs4.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Princton-algs4.1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/file.template.settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/libraries/Princton_algs4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/libraries/_lift.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/algs4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/checkstyle-coursera.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/checkstyle-lift.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/checkstyle-suppressions.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/spotbugs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/Algorithms, Part I.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/CREDITS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/InteractivePercolationVisualizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/Percolation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/PercolationStats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/PercolationVisualizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/Princton-algs4.1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/algs4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/greeting57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/greeting57.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/heart25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/heart25.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input1-no.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input1-no.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input10-no.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input10-no.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input2-no.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input2-no.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input50.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8-dups.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8-dups.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8-no.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8-no.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/input8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/java60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/java60.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/jerry47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/jerry47.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/sedgewick60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/sedgewick60.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/snake101.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/snake101.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/snake13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/snake13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/wayne98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/wayne98.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/Princton-algs4.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/Princton-algs4.1.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,8 +16,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Percolation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Percolation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1110">
+              <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PercolationStats.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PercolationStats.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Percolation.java" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -119,8 +75,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,9 +85,9 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,7 +102,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="PercolationStats" type="Application" factoryName="Application">
+    <configuration name="PercolationStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PercolationStats" />
       <module name="Princton-algs4.1" />
       <option name="PROGRAM_PARAMETERS" value="2 4" />
@@ -193,6 +149,11 @@
       <properties />
       <listeners />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PercolationStats" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -205,43 +166,46 @@
       <option name="presentableId" value="Default" />
       <updated>1540312303869</updated>
       <workItem from="1540312307738" duration="427000" />
+      <workItem from="1540312810836" duration="687000" />
+      <workItem from="1540319473324" duration="1561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="427000" />
+    <option name="totallyTimeSpent" value="2675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32969698" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +213,29 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Percolation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="100" column="51" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PercolationStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Percolation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
