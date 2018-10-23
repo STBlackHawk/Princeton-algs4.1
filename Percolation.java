@@ -98,7 +98,9 @@ public class Percolation {
 
         if (matrix[row - 1][col - 1] == 0) {
             for (int m = 0; m < l; m++) {
-                b = IdMatrix.connected((((row -1) * l) + (col-1)), (m));
+                if (matrix[0][m] == 0) {
+                    b = IdMatrix.connected((((row - 1) * l) + (col - 1)), (m));
+                }
             }
 
         }

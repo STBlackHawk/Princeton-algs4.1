@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name=".lift">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/.lift/checkstyle-lift.jar!/" />
-      <root url="jar://$PROJECT_DIR$/.lift/algs4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/checkstyle-lift.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/algs4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,7 +1,6 @@
 <component name="libraryTable">
-  <library name="Princton-algs4.1">
+  <library name="algs4">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Percolation6thattemp.zip!/" />
       <root url="jar://$PROJECT_DIR$/algs4.jar!/" />
     </CLASSES>
     <JAVADOC />
