@@ -6,23 +6,28 @@
 
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
+import java.lang.Math;
 
 public class PercolationStats {
-     private int [] C;
+     private final double [] C;
      private double m, s, cL, cH;
     public PercolationStats(int n, int trials){
         if (n <= 0 || trials <= 0 ){
             throw new IllegalArgumentException
                     ("n should not be less than or equal to zero");
         }
-            Percolation p = new Percolation(n);
-            C = new int[trials];
+
+            C = new double [trials];
             for (int z = 0; z< trials; z++){
+                Percolation p = new Percolation(n);
+                int u;
+                int l;
                 while (!p.percolates()) {
-                    p.open(StdRandom.uniform(1,n+1),
-                           StdRandom.uniform(1,n+1));
+                    u = StdRandom.uniform(1,n+1);
+                    l = StdRandom.uniform(1,n+1);
+                    p.open(u,l);
                 }
-                C[z] = p.numberOfOpenSites();
+                C[z] = ((float)p.numberOfOpenSites())/(n*n);
             }
 
         }
@@ -38,12 +43,12 @@ public class PercolationStats {
         }
 
         public double confidenceLo(){
-        cL = mean() - (1.96/ stddev());
+        cL = m - (1.96 *s/(Math.sqrt(C.length)));
         return cL;
         }
 
         public double confidenceHi(){
-        cH = mean() + (1.96/stddev());
+        cH = m + (1.96*s/(Math.sqrt(C.length)));
         return cH;
         }
 

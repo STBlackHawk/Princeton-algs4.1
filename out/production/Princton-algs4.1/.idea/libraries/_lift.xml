@@ -5,6 +5,8 @@
       <root url="jar://$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/algs4.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/algs4.jar!/" />
+    </SOURCES>
   </library>
 </component>
