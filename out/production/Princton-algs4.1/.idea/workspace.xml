@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Final Push">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/PercolationStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Princton-algs4.1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/lift/" />
@@ -83,24 +80,25 @@
     <session id="-1994582794">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1867" />
+          <entry key="java" value="2793" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1867" />
+          <entry key="JAVA" value="2793" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -128,8 +126,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Percolation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="143" column="64" selection-start-line="143" selection-start-column="64" selection-end-line="143" selection-end-column="64" />
+            <state relative-caret-position="253">
+              <caret line="126" column="46" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#4952#0" expanded="true" />
+                <element signature="e#2919#2920#0" expanded="true" />
+                <element signature="e#2948#2949#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,19 +143,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input6.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2385">
-              <caret line="173" selection-start-line="173" selection-end-line="173" />
+            <state relative-caret-position="470">
+              <caret line="173" column="5" lean-forward="true" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+              <folding>
+                <element signature="e#4802#4803#0" expanded="true" />
+                <element signature="e#4830#4831#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,10 +158,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PercolationStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="510">
+              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1348#1349#0" expanded="true" />
+                <element signature="e#1376#1377#0" expanded="true" />
+                <element signature="e#1437#1438#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -237,7 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,6 +250,7 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -258,7 +259,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540409063449" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540483802590" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
@@ -278,7 +279,7 @@
     <configuration name="PercolationStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PercolationStats" />
       <module name="Princton-algs4.1" />
-      <option name="PROGRAM_PARAMETERS" value="100 200" />
+      <option name="PROGRAM_PARAMETERS" value="200 100" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -312,7 +313,8 @@
       <workItem from="1540345915062" duration="6626000" />
       <workItem from="1540356900597" duration="81000" />
       <workItem from="1540393756160" duration="10830000" />
-      <workItem from="1540420007989" duration="1051000" />
+      <workItem from="1540420007989" duration="8700000" />
+      <workItem from="1540437081908" duration="2657000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1539737468667</created>
@@ -381,7 +383,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71909000" />
+    <option name="totallyTimeSpent" value="82215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,7 +398,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12088698" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1223176" />
       <window_info id="Structure" order="1" show_stripe_button="false" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" show_stripe_button="false" side_tool="true" />
@@ -405,15 +407,15 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48354793" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.55293274" weight="0.25662652" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48211733" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5522174" weight="0.25662652" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.32904148" />
       <window_info anchor="bottom" id="CheckStyle" order="7" sideWeight="0.49840087" weight="0.32848233" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48640916" weight="0.30843374" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5164521" side_tool="true" visible="true" weight="0.25662652" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.48569384" visible="true" weight="0.30843374" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5143061" side_tool="true" visible="true" weight="0.30843374" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49785408" weight="0.32650602" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="12" sideWeight="0.4978678" weight="0.32848233" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -446,16 +448,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Final Push" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PercolationStats.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="matrix[i - 1]" language="JAVA" />
@@ -563,16 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Percolation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="143" column="64" selection-start-line="143" selection-start-column="64" selection-end-line="143" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/input6.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -580,19 +562,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
+    <entry file="file://$PROJECT_DIR$/PercolationStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2385">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        <state relative-caret-position="510">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PercolationStats.java">
+    <entry file="file://$PROJECT_DIR$/input6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/production/Princton-algs4.1/.lift/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="470">
+          <caret line="173" column="5" lean-forward="true" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4802#4803#0" expanded="true" />
+            <element signature="e#4830#4831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Percolation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="126" column="46" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#4952#0" expanded="true" />
+            <element signature="e#2919#2920#0" expanded="true" />
+            <element signature="e#2948#2949#0" expanded="true" />
           </folding>
         </state>
       </provider>

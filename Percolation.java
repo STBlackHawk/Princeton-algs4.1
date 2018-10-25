@@ -10,6 +10,8 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 public class Percolation {
     private boolean[][] matrix;
     private final WeightedQuickUnionUF IdMatrix ;
+    private final WeightedQuickUnionUF Percolate;
+
     private int NoOpen;
 
 
@@ -22,9 +24,9 @@ public class Percolation {
         }
 
         matrix = new boolean[n][n];
-        IdMatrix =  new WeightedQuickUnionUF((matrix.length*matrix.length));
+        IdMatrix =  new WeightedQuickUnionUF((matrix.length*matrix.length)+1);
+        Percolate =  new WeightedQuickUnionUF((matrix.length*matrix.length)+2);
         NoOpen = 0;
-
 
 
 
@@ -44,27 +46,37 @@ public class Percolation {
         int j = col - 1;
 
 
-        if (!isOpen(row, col)) {
 
+        if (!isOpen(row, col)) {
+            int r;
             matrix[i][j] = true;
             NoOpen++;
+
+            if (i == 0){
+                IdMatrix.union((i*l)+j,(matrix.length * matrix.length));
+                Percolate.union((i*l)+j,(matrix.length * matrix.length));
+            }
+
+            if(i == l-1){
+                Percolate.union((i*l)+j,(matrix.length * matrix.length)+1);
+            }
 
 
             if (i != 0 && matrix[i-1][j]){
                 IdMatrix.union((((i - 1) * l) + j), ((i * l) + j));
+                Percolate.union((((i - 1) * l) + j), ((i * l) + j));
             }
             if (j != 0 && matrix[i][j - 1]) {
                 IdMatrix.union((((i) * l) + (j - 1)), ((i * l) + j));
-
+                Percolate.union((((i) * l) + (j - 1)), ((i * l) + j));
             }
             if (j != l - 1 && matrix[i][j + 1]) {
                 IdMatrix.union((((i) * l) + (j + 1)), ((i * l) + j));
-
-
+                Percolate.union((((i) * l) + (j + 1)), ((i * l) + j));
             }
             if (i != l - 1 && matrix[i + 1][j]) {
                 IdMatrix.union((((i + 1) * l) + (j)), ((i * l) + j));
-
+                Percolate.union((((i + 1) * l) + (j)), ((i * l) + j));
             }
 
 
@@ -94,15 +106,9 @@ public class Percolation {
                              + "than zero or more than n");
         }
         boolean b = false;
-
-        if (matrix[row - 1][col - 1]) {
-            for (int m = 0; m < matrix.length; m++) {
-                if (matrix[0][m]) {
-                    b = IdMatrix.connected((((row - 1) * matrix.length) + (col - 1)), (m));
-                    if (b) break;
-                }
-            }
-
+        if(isOpen(row,col)) {
+            b =  IdMatrix.connected(((row - 1) * matrix.length) + (col - 1),
+                                      (matrix.length * matrix.length));
         }
         return b;
     }
@@ -112,25 +118,9 @@ public class Percolation {
     }
 
     public boolean percolates() {
-        int max = 0;
-        for ( int k = 0; k < matrix.length ; k++ ){
-            if(IdMatrix.find(k) > max && matrix[0][k]){
-                max = IdMatrix.find(k);
-            }
-        }
-
-        int min = matrix.length*matrix.length;
-
-        for (int g = (matrix.length*matrix.length) - 1;
-             g >=(matrix.length*(matrix.length-1)); g--){
-            if (IdMatrix.find(g) < min &&
-                    matrix[matrix.length -1][g - matrix.length*(matrix.length-1)])
-            {min = IdMatrix.find(g);}
-
-        }
-
-        return (min <= max) ;
-
+      return Percolate.connected(
+              (matrix.length * matrix.length),
+              (matrix.length * matrix.length)+1);
     }
 
 }
