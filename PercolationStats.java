@@ -29,26 +29,26 @@ public class PercolationStats {
                 }
                 C[z] = ((float)p.numberOfOpenSites())/(n*n);
             }
+        m = StdStats.mean(C);
+        s = StdStats.stddev(C);
+        cL = m - (1.96*s/(Math.sqrt(C.length)));
+        cH = m + (1.96*s/(Math.sqrt(C.length)));
 
         }
 
         public double mean(){
-        m = StdStats.mean(C);
         return m;
         }
 
         public double stddev(){
-        s = StdStats.stddev(C);
         return s;
         }
 
         public double confidenceLo(){
-        cL = m - (1.96 *s/(Math.sqrt(C.length)));
         return cL;
         }
 
         public double confidenceHi(){
-        cH = m + (1.96*s/(Math.sqrt(C.length)));
         return cH;
         }
 

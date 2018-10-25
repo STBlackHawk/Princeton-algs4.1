@@ -8,8 +8,11 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 
 public class Percolation {
-     private boolean[][] matrix;
-     private final WeightedQuickUnionUF IdMatrix ;
+    private boolean[][] matrix;
+    private final WeightedQuickUnionUF IdMatrix ;
+    private int NoOpen;
+
+
 
     public Percolation(int n){
 
@@ -20,6 +23,10 @@ public class Percolation {
 
         matrix = new boolean[n][n];
         IdMatrix =  new WeightedQuickUnionUF((matrix.length*matrix.length));
+        NoOpen = 0;
+
+
+
 
 
     }
@@ -37,22 +44,30 @@ public class Percolation {
         int j = col - 1;
 
 
-        matrix[i][j] = true;
+        if (!isOpen(row, col)) {
 
-        if (i != 0 && matrix[i - 1][j]) {
-            IdMatrix.union((((i - 1) * l) + j), ((i * l) + j));
+            matrix[i][j] = true;
+            NoOpen++;
 
-        }
-        if (j != 0 && matrix[i][j - 1]) {
-            IdMatrix.union((((i) * l) + (j - 1)), ((i * l) + j));
 
-        }
-        if (j != l - 1 && matrix[i][j + 1]) {
-            IdMatrix.union((((i) * l) + (j + 1)), ((i * l) + j));
+            if (i != 0 && matrix[i-1][j]){
+                IdMatrix.union((((i - 1) * l) + j), ((i * l) + j));
+            }
+            if (j != 0 && matrix[i][j - 1]) {
+                IdMatrix.union((((i) * l) + (j - 1)), ((i * l) + j));
 
-        }
-        if (i != l - 1 && matrix[i + 1][j]) {
-            IdMatrix.union((((i + 1) * l) + (j)), ((i * l) + j));
+            }
+            if (j != l - 1 && matrix[i][j + 1]) {
+                IdMatrix.union((((i) * l) + (j + 1)), ((i * l) + j));
+
+
+            }
+            if (i != l - 1 && matrix[i + 1][j]) {
+                IdMatrix.union((((i + 1) * l) + (j)), ((i * l) + j));
+
+            }
+
+
 
         }
 
@@ -76,7 +91,7 @@ public class Percolation {
                 || col <= 0 || col > matrix.length) {
             throw new IllegalArgumentException
                     ("your row and coloiumn input are less "
-                            + "than zero or more than n");
+                             + "than zero or more than n");
         }
         boolean b = false;
 
@@ -93,32 +108,32 @@ public class Percolation {
     }
 
     public int numberOfOpenSites() {
-        int m = 0;
-        for (int j = 0; j < matrix.length; j++) {
-            for (int k = 0; k < matrix.length; k++) {
-                if (matrix[j][k]) {
-                    m++;
-                }
-            }
-        }
-        return m;
+        return NoOpen;
     }
 
     public boolean percolates() {
-        boolean b = false;
-        for (int m = 1; m <= matrix.length; m++) {
-            if(matrix[matrix.length -1][m -1]) {
-                b = isFull(matrix.length, m);
-                if (b) break;
+        int max = 0;
+        for ( int k = 0; k < matrix.length ; k++ ){
+            if(IdMatrix.find(k) > max && matrix[0][k]){
+                max = IdMatrix.find(k);
             }
+        }
+
+        int min = matrix.length*matrix.length;
+
+        for (int g = (matrix.length*matrix.length) - 1;
+             g >=(matrix.length*(matrix.length-1)); g--){
+            if (IdMatrix.find(g) < min &&
+                    matrix[matrix.length -1][g - matrix.length*(matrix.length-1)])
+            {min = IdMatrix.find(g);}
 
         }
-        return b;
+
+        return (min <= max) ;
+
     }
 
 }
-
-
 
 
 
